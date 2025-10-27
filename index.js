@@ -39,8 +39,6 @@ async function fetchBotResponse(userMessage) {
 
         const data = await response.json();
 
-        thinking.remove();
-
         const message = marked.parse(data.output);
         addMessage(message, false);
 
@@ -48,7 +46,7 @@ async function fetchBotResponse(userMessage) {
         console.error("Error fetching response:", error);
         addMessage("Sorry, I had trouble connecting to the servers. Check the console for details.", false);
     } finally {
-        thinkingMessage.style.display = "none";
+        thinking.remove();
     }
 }
 

@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    background-color: #2d2d2d;
+    border-bottom: 1px solid #333333;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25em;
+    flex-shrink: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.messages {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    max-width: 65%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #730030;
+    color: white;
+    border-bottom-right-radius: 2px;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #333333;
+    border-bottom-left-radius: 2px;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.thinking {
+    align-self: flex-start;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: #2d2d2d;
+    border-top: 1px solid #333333;
+    padding: 15px;
+}
+
+.send-message {
+    display: flex;
+    width: 50%;
+}
+
+#message-input {
+    flex-grow: 1;
+    background-color: #3d3d3d;
+    color: #e0e0e0;
+    font-size: 1em;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+#send-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #730030;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#send-button:hover {
+    background-color: #B9004B;
+}

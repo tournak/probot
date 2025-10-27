@@ -3,7 +3,7 @@ const thinkingMessage = document.getElementsByClassName("thinking")[0];
 const messageInput = document.getElementById("message-input");
 const sendButton = document.getElementById("send-button");
 
-const WEBHOOK_URL = "https://probot.keegant.dev/webhook/033400de-aace-4432-8096-63dce19044a4";
+const WEBHOOK_URL = "https://propal.keegant.dev/webhook/033400de-aace-4432-8096-63dce19044a4";
 const SESSION_ID = Date.now();
 
 function addMessage(text, userMessage) {

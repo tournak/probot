@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Productivity Chatbot</title>
+    <link rel="icon" type="image/x-icon" href="/logo.png">
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    Hello, world!
+    <header>ProBot - Your Productivity Assistant</header>
+
+    <div class="container">
+        <div class="messages">
+            <div class="message bot-message">Hello! I am ProBot, your productivity assisant. How can I help you today?</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="send-message">
+            <input type="text" id="message-input" placeholder="Ask ProBot" autofocus>
+            <button id="send-button">➤</button>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
